@@ -33,7 +33,7 @@ The project was developed in Java using the Eclipse IDE, in a Maven project. Aft
 
      maven clean install
 
-To run the program as a Java application use the comamdn
+To run the program as a Java application use the command
 
      maven exec:java
 
