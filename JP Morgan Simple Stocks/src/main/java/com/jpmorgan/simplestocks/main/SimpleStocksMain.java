@@ -35,6 +35,18 @@ public class SimpleStocksMain {
 	/* Simulated input */
 	String inputStock = "ale";
 	double marketPrice = 15.35;
+	int nShares = 50;
+	String tradeIndicator = "sell";
+	/* */
+	
+	System.out.println("#########################");
+	System.out.println("SIMULATED INPUT VALUES:");
+	System.out.println("GBCE Stock: " + inputStock);
+	System.out.println("Market price: " + marketPrice);
+	System.out.println("Number of shares traded: " + nShares);
+	System.out.println("Trade indicator: " + TradeIndicator.valueOf(tradeIndicator.toUpperCase()));
+	System.out.println("#########################");
+	
 	GBCEStock stock = sampleData.get(StockSymbol.valueOf(inputStock.toUpperCase()));
 
 	System.out.println("\n==== EXERCISE a. i. Dividend Yield =====");
@@ -46,12 +58,10 @@ public class SimpleStocksMain {
 	System.out.println("");
 
 	System.out.println("==== EXERCISE a. iii. Record a trade =====");
-	int nShares = 50;
-	String tradeIndicator = "sell";
-
+	
 	StockTrade trade = stockOperations.recordTrade(stock, nShares, TradeIndicator.valueOf(tradeIndicator.toUpperCase()));
 
-	if (trade != null) {
+	if (trade.getQuantity() > 0) {
 	    System.out.println("Recorded trade for stock " + stock.getStockSymbol() + ":\n" + trade.toString());
 	} else {
 	    System.out.println("No stocks were traded.");
