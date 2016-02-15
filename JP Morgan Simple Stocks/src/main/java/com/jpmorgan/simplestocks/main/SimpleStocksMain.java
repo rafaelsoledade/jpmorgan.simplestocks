@@ -37,6 +37,7 @@ public class SimpleStocksMain {
 	double marketPrice = 15.35;
 	int nShares = 50;
 	String tradeIndicator = "sell";
+	double tradePrice = 16.20;
 	/* */
 	
 	System.out.println("#########################");
@@ -45,6 +46,7 @@ public class SimpleStocksMain {
 	System.out.println("Market price: " + marketPrice);
 	System.out.println("Number of shares traded: " + nShares);
 	System.out.println("Trade indicator: " + TradeIndicator.valueOf(tradeIndicator.toUpperCase()));
+	System.out.println("Trade price: " + tradePrice);
 	System.out.println("#########################");
 	
 	GBCEStock stock = sampleData.get(StockSymbol.valueOf(inputStock.toUpperCase()));
@@ -59,7 +61,7 @@ public class SimpleStocksMain {
 
 	System.out.println("==== EXERCISE a. iii. Record a trade =====");
 	
-	StockTrade trade = stockOperations.recordTrade(stock, nShares, TradeIndicator.valueOf(tradeIndicator.toUpperCase()));
+	StockTrade trade = stockOperations.recordTrade(stock, nShares, TradeIndicator.valueOf(tradeIndicator.toUpperCase()), tradePrice);
 
 	if (trade.getQuantity() > 0) {
 	    System.out.println("Recorded trade for stock " + stock.getStockSymbol() + ":\n" + trade.toString());
