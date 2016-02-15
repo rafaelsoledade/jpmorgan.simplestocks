@@ -1,31 +1,61 @@
-## Synopsis
-
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
-
-## Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+This project is a simple stocks manager, developed as part of an assignment for a recruitment process @ JP Morgan. This software includes the use of several Java and OOP concepts such as inheritance, interfaces, abstract classes, generic types, static methods, amongst others. It also has a unitary test component.
+
+## Project Description
+
+##### Requirements
+
+1.	Provide working source code that will:
+
+    a.	For a given stock:
+    
+        i.    Calculate the dividend yield.
+        ii.   Calculate the P/E Ratio.
+        iii.  Record a trade, with timestamp, quantity of shares, buy or sell indicator and price.
+        iv.   Calculate Stock Price based on trades recorded in past 15 minutes.
+
+    b.	Calculate the GBCE All Share Index using the geometric mean of prices for all stocks
+
+##### Constraints & Notes
+
+1.	Written in one of these languages:
+    
+    * Java, C#, C++, Python.
+    
+2.	No database or GUI is required, all data need only be held in memory.
+
+3.	Formulas and data provided are simplified representations for the purpose of this exercise.
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+The project was developed in Java using the Eclipse IDE, in a Maven project. After getting the projet from GitHub, you can compile it using the command
+
+     maven clean install
+
+To run the program as a Java application use the comamdn
+
+     maven exec:java
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+The libraries used are Jackson and Google's JSON-Simple, used for deserializing a JSON file with a test data array.
+The project was compiled using Java 8.
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
+The project has a unit test component, implemented with JUnit 4. To run the tests, use the command
 
-## Contributors
+     maven test
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+Sample test data:
 
-## License
+##### Global Beverage Corporation Exchange
 
-A short snippet describing the license (MIT, Apache, etc.)
+Stock Symbol  | Type | Last Dividend | Fixed Dividend | Par Value
+------------- | ---- | ------------: | :------------: | --------: 
+TEA           | Common    | 0  |    | 100
+POP           | Common    | 8  |    | 100
+ALE           | Common    | 23 |    | 60
+GIN           | Preferred | 8  | 2% | 100
+JOE           | Common    | 13 |    | 250
