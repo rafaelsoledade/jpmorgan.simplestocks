@@ -8,9 +8,8 @@ The project was compiled using Java 8.
 
 ##### Requirements
 
-1.	Provide working source code that will:
-
-        For a given stock:
+1.	Provide working source code that will, for a given stock::
+        
                 a.	
                         i.    Calculate the dividend yield.
                         ii. Calculate the P/E Ratio.
