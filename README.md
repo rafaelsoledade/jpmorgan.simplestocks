@@ -8,16 +8,15 @@ The project was compiled using Java 8.
 
 ##### Requirements
 
-1.	Provide working source code that will:
+1.	Provide working source code that will, for a given stock::
+        
+                a.	
+                        i.    Calculate the dividend yield.
+                        ii. Calculate the P/E Ratio.
+                        iii.  Record a trade, with timestamp, quantity of shares, buy or sell indicator and price.
+                        iv.   Calculate Stock Price based on trades recorded in past 15 minutes.
 
-    a.	For a given stock:
-    
-        i.    Calculate the dividend yield.
-        ii.   Calculate the P/E Ratio.
-        iii.  Record a trade, with timestamp, quantity of shares, buy or sell indicator and price.
-        iv.   Calculate Stock Price based on trades recorded in past 15 minutes.
-
-    b.	Calculate the GBCE All Share Index using the geometric mean of prices for all stocks
+                b.	Calculate the GBCE All Share Index using the geometric mean of prices for all stocks
 
 ##### Constraints & Notes
 
@@ -29,21 +28,25 @@ The project was compiled using Java 8.
 
 3.	Formulas and data provided are simplified representations for the purpose of this exercise.
 
-## Installation
+## How To Run
 
 After pulling the project from GitHub, you can compile it using mvn with the following command
 
-     maven clean install
+     mvn clean install
 
 To run the program as a Java application use the command
 
      mvn exec:java
 
+## Program Interface
+
+When running the project all the operations will be calculated for a set of pre-defined parameters. The results will be displayed on scree. A web service invocation approach could be developed in a future release, using simple Spark or Spring setups to request a web service with some given parameters to get the intended result.
+
 ## Tests
 
 The project has a unit test component, implemented with JUnit 4. To run the tests, use the command
 
-     mvn test
+     mvn clean test
 
 ## Sample Test Data
 
