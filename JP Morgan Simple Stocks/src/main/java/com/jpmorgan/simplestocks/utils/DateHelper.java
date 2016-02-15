@@ -14,7 +14,7 @@ public class DateHelper {
 
     /**
      * 
-     * Method that verifies if a given date is within the last 15 minutes
+     * Method that verifies if a given date is within the last n minutes
      * 
      * @param timeStamp
      * @param timeSpanInMinutes
