@@ -93,14 +93,14 @@ public class GBCEStockCalculator implements IStockCalculator<GBCEStock> {
 
     public double calculateGBCEAllShareIndex(List<GBCEStock> allStocks) {
 
-	double stockPriceSum = 0.0;
+	double stockPriceMultiplied = 1.0;
 
 	if (allStocks.size() > 0) {
 	    for (GBCEStock currStock : allStocks) {
-		stockPriceSum += currStock.getMarketPrice();
+		stockPriceMultiplied *= currStock.getMarketPrice();
 	    }
-	    return new BigDecimal(Math.pow(stockPriceSum, 1.0 / allStocks.size())).setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
+	    return new BigDecimal(Math.pow(stockPriceMultiplied, 1.0 / allStocks.size())).setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
 	}
-	return stockPriceSum;
+	return defaultReturnValue;
     }
 }
