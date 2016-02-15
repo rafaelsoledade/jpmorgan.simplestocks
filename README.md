@@ -29,7 +29,7 @@ The project was compiled using Java 8.
 
 3.	Formulas and data provided are simplified representations for the purpose of this exercise.
 
-## Installation
+## How To Run
 
 After pulling the project from GitHub, you can compile it using mvn with the following command
 
@@ -38,6 +38,10 @@ After pulling the project from GitHub, you can compile it using mvn with the fol
 To run the program as a Java application use the command
 
      mvn exec:java
+
+## Program Interface
+
+A very simple command line interface was added, from which the user can select an operation and view the result. Alternatively, this could be done via a web service using simple Spark or Spring setups in a future release.
 
 ## Tests
 
