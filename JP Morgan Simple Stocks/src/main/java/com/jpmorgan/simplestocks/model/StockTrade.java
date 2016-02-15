@@ -1,8 +1,8 @@
-package com.jpmorgan.simplestocks.model;
+package main.java.com.jpmorgan.simplestocks.model;
 
 import java.util.Date;
 
-import com.jpmorgan.simplestocks.enums.TradeIndicator;
+import main.java.com.jpmorgan.simplestocks.enums.TradeIndicator;
 
 /**
  * Object that represents a stock trade operation.

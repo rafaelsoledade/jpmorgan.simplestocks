@@ -1,9 +1,12 @@
-package com.jpmorgan.simplestocks.utils;
+package main.java.com.jpmorgan.simplestocks.utils;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+
+import main.java.com.jpmorgan.simplestocks.enums.StockSymbol;
+import main.java.com.jpmorgan.simplestocks.model.GBCEStock;
 
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
@@ -13,8 +16,6 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jpmorgan.simplestocks.enums.StockSymbol;
-import com.jpmorgan.simplestocks.model.GBCEStock;
 
 /**
  * Class responsible for generating test data from a json array

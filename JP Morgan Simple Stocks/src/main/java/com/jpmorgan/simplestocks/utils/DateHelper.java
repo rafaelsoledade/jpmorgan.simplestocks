@@ -1,4 +1,4 @@
-package com.jpmorgan.simplestocks.utils;
+package main.java.com.jpmorgan.simplestocks.utils;
 
 import java.util.Calendar;
 import java.util.Date;
