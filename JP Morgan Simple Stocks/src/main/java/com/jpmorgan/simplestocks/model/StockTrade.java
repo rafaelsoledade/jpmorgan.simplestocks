@@ -61,6 +61,6 @@ public class StockTrade {
     @Override
     public String toString() {
 	return "Time Stamp: " + timeStamp.toString() + "; Quantity: " + quantity + "; Operation: "
-		+ tradeIndicator.getIndicator() + "; Price: " + tradePrice;
+		+ tradeIndicator.getIndicator() + "; Trade Price: " + tradePrice + "; Trade total cost: " + (tradePrice*quantity);
     }
 }
