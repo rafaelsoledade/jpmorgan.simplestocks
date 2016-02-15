@@ -11,10 +11,10 @@ The project was compiled using Java 8.
 1.	Provide working source code that will, for a given stock::
         
                 a.	
-                        i.    Calculate the dividend yield.
-                        ii. Calculate the P/E Ratio.
-                        iii.  Record a trade, with timestamp, quantity of shares, buy or sell indicator and price.
-                        iv.   Calculate Stock Price based on trades recorded in past 15 minutes.
+                        i. Given a market price as input, calculate the dividend yield
+                        ii. Given a market price as input,  calculate the P/E Ratio
+                        iii. Record a trade, with timestamp, quantity of shares, buy or sell indicator and trade price
+                        iv. Calculate Volume Weighted Stock Price based on trades in past 15 minutes
 
                 b.	Calculate the GBCE All Share Index using the geometric mean of prices for all stocks
 
