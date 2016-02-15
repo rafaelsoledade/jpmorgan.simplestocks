@@ -45,7 +45,7 @@ The project has a unit test component, implemented with JUnit 4. To run the test
 
      mvn test
 
-## Sample test data
+## Sample Test Data
 
 ##### Global Beverage Corporation Exchange
 
