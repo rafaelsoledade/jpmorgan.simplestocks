@@ -14,9 +14,6 @@ public enum StockType {
 
     private final String type;
 
-    /**
-     * @param text
-     */
     private StockType(final String type) {
 	this.type = type;
     }

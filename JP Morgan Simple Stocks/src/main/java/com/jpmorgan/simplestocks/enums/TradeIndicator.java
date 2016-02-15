@@ -13,9 +13,6 @@ public enum TradeIndicator {
 
     private final String indicator;
 
-    /**
-     * @param text
-     */
     private TradeIndicator(final String indicator) {
 	this.indicator = indicator;
     }
