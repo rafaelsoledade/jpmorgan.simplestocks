@@ -2,8 +2,10 @@ package main.java.com.jpmorgan.simplestocks.utils;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import main.java.com.jpmorgan.simplestocks.enums.StockSymbol;
 import main.java.com.jpmorgan.simplestocks.model.GBCEStock;
@@ -88,4 +90,14 @@ public class GBCEStockSampleDataGenerator {
 	return objectMapper.readValue(jsonString.toString(), objectMapper.getTypeFactory().constructCollectionType(List.class, GBCEStock.class));
     }
 
+    public static List<GBCEStock> allGBCEStocksList(HashMap<StockSymbol, GBCEStock> sampleData) {
+
+	List<GBCEStock> allStocks = new ArrayList<GBCEStock>();
+
+	for (Map.Entry<StockSymbol, GBCEStock> entry : sampleData.entrySet()) {
+	    allStocks.add(entry.getValue());
+	}
+	return allStocks;
+    }
+    
 }
