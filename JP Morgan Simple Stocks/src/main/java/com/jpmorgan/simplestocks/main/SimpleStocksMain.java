@@ -1,10 +1,7 @@
 package main.java.com.jpmorgan.simplestocks.main;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import main.java.com.jpmorgan.simplestocks.enums.StockSymbol;
 import main.java.com.jpmorgan.simplestocks.enums.TradeIndicator;
@@ -76,17 +73,7 @@ public class SimpleStocksMain {
 	System.out.println("");
 
 	System.out.println("==== EXERCISE b. GBCE All Share Index =====");
-	System.out.println(stockOperations.calculateGBCEAllShareIndex(allGBCEStocks(sampleData)));
+	System.out.println(stockOperations.calculateGBCEAllShareIndex(GBCEStockSampleDataGenerator.allGBCEStocksList(sampleData)));
 	System.out.println("");
-    }
-
-    private static List<GBCEStock> allGBCEStocks(HashMap<StockSymbol, GBCEStock> sampleData) {
-
-	List<GBCEStock> allStocks = new ArrayList<GBCEStock>();
-
-	for (Map.Entry<StockSymbol, GBCEStock> entry : sampleData.entrySet()) {
-	    allStocks.add(entry.getValue());
-	}
-	return allStocks;
     }
 }
