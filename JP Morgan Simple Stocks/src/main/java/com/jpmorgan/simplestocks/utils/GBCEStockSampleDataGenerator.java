@@ -77,7 +77,7 @@ public class GBCEStockSampleDataGenerator {
 	/* Get file from resources folder */
 	JSONParser parser = new JSONParser();
 	FileReader fileReader = null;
-	fileReader = new FileReader("resources/testData/sampleData.json");
+	fileReader = new FileReader("resources/sampleData.json");
 	JSONArray jsonString;
 	jsonString = (JSONArray) parser.parse(fileReader);
 
