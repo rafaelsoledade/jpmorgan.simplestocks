@@ -33,7 +33,7 @@ The project was compiled using Java 8.
 
 After pulling the project from GitHub, you can compile it using mvn with the following command
 
-     maven clean install
+     mvn clean install
 
 To run the program as a Java application use the command
 
@@ -43,7 +43,7 @@ To run the program as a Java application use the command
 
 The project has a unit test component, implemented with JUnit 4. To run the tests, use the command
 
-     mvn test
+     mvn clean test
 
 ## Sample Test Data
 
