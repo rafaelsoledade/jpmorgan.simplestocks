@@ -20,7 +20,7 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.jpmorgan.simplestocks.test.SimpleStocksTestClass</mainClass>
+					<mainClass>com.jpmorgan.simplestocks.main.SimpleStocksMain</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
