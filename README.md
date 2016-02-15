@@ -37,13 +37,13 @@ After pulling the project from GitHub, you can compile it using mvn with the fol
 
 To run the program as a Java application use the command
 
-     maven exec:java
+     mvn exec:java
 
 ## Tests
 
 The project has a unit test component, implemented with JUnit 4. To run the tests, use the command
 
-     maven test
+     mvn test
 
 Sample test data:
 
