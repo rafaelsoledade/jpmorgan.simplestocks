@@ -7,7 +7,8 @@ import main.java.com.jpmorgan.simplestocks.model.Stock;
 import main.java.com.jpmorgan.simplestocks.model.StockTrade;
 
 /**
- * Interface for the stock calculator. These are considered to be the base operations for all stocks.
+ * Interface for the stock calculator. These are considered to be the base
+ * operations for all stocks.
  * 
  */
 public interface IStockCalculator<T extends Stock> {
@@ -41,10 +42,11 @@ public interface IStockCalculator<T extends Stock> {
      *            number of shares traded
      * @param tradeIndicator
      *            indication if it's a sell or buy trade
-     *            
-     * return the trade object
+     * 
+     * @param tradePrice
+     *            the trade price
      */
-    public StockTrade recordTrade(T stock, int nShares, TradeIndicator tradeIndicator);
+    public StockTrade recordTrade(T stock, int nShares, TradeIndicator tradeIndicator, double tradePrice);
 
     /**
      * Exercise a. iv.
@@ -58,8 +60,8 @@ public interface IStockCalculator<T extends Stock> {
     /**
      * Exercise b.
      * 
-     * @param allStocks 
-     * 		The list of all available stocks
+     * @param allStocks
+     *            The list of all available stocks
      * @return GBCE Price share index
      */
     public double calculateGBCEAllShareIndex(List<T> allStocks);

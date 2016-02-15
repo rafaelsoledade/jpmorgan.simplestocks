@@ -53,17 +53,17 @@ public class GBCEStockCalculator implements IStockCalculator<GBCEStock> {
 	return defaultReturnValue;
     }
 
-    public StockTrade recordTrade(GBCEStock stock, int nShares, TradeIndicator tradeIndicator) {
+    public StockTrade recordTrade(GBCEStock stock, int nShares, TradeIndicator tradeIndicator, double tradePrice) {
 
 	StockTrade stockTrade = new StockTrade();
 
-	if (nShares > 0) {
+	if (nShares * tradePrice > 0) {
 
 	    stockTrade.setQuantity(nShares);
 	    stockTrade.setTimeStamp(new Date());
 	    stockTrade.setTradeIndicator(tradeIndicator);
-
-	    double tradePrice = new BigDecimal(nShares * stock.getMarketPrice()).setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
+	    
+	    tradePrice = new BigDecimal(tradePrice).setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
 
 	    stockTrade.setTradePrice(tradePrice);
 
