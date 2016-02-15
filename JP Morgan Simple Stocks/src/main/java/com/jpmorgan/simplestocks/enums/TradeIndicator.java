@@ -2,7 +2,7 @@ package main.java.com.jpmorgan.simplestocks.enums;
 
 /**
  * 
- * Constants for the stock symbol, as java enum
+ * Constants for the trade indicator, as java enum
  * 
  * @author rafaelmatos
  * 
