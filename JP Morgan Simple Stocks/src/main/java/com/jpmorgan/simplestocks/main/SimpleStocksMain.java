@@ -17,7 +17,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 
 /**
  * 
- * Main class for testing purposes
+ * Main class which serves as an entry point, even though this is a very basic version of it.
  * 
  * @author rafaelmatos
  *
