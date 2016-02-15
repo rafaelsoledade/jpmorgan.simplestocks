@@ -40,7 +40,7 @@ To run the program as a Java application use the command
 
 ## Program Interface
 
-A very simple command line interface was added, from which the user can select an operation and view the result. Alternatively, this could be done via a web service using simple Spark or Spring setups in a future release.
+When running the project all the operations will be calculated for a set of pre-defined parameters. The results will be displayed on scree. A web service invocation approach could be developed in a future release, using simple Spark or Spring setups to request a web service with some given parameters to get the intended result.
 
 ## Tests
 
