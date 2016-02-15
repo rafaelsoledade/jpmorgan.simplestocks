@@ -1,10 +1,10 @@
-package com.jpmorgan.simplestocks.supportedOperations;
+package main.java.com.jpmorgan.simplestocks.supportedOperations;
 
 import java.util.List;
 
-import com.jpmorgan.simplestocks.enums.TradeIndicator;
-import com.jpmorgan.simplestocks.model.Stock;
-import com.jpmorgan.simplestocks.model.StockTrade;
+import main.java.com.jpmorgan.simplestocks.enums.TradeIndicator;
+import main.java.com.jpmorgan.simplestocks.model.Stock;
+import main.java.com.jpmorgan.simplestocks.model.StockTrade;
 
 /**
  * Interface for the stock calculator. These are considered to be the base operations for all stocks.

@@ -1,15 +1,15 @@
-package com.jpmorgan.simplestocks.supportedOperations.impl;
+package main.java.com.jpmorgan.simplestocks.supportedOperations.impl;
 
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-import com.jpmorgan.simplestocks.enums.StockType;
-import com.jpmorgan.simplestocks.enums.TradeIndicator;
-import com.jpmorgan.simplestocks.model.GBCEStock;
-import com.jpmorgan.simplestocks.model.StockTrade;
-import com.jpmorgan.simplestocks.supportedOperations.IStockCalculator;
-import com.jpmorgan.simplestocks.utils.DateHelper;
+import main.java.com.jpmorgan.simplestocks.enums.StockType;
+import main.java.com.jpmorgan.simplestocks.enums.TradeIndicator;
+import main.java.com.jpmorgan.simplestocks.model.GBCEStock;
+import main.java.com.jpmorgan.simplestocks.model.StockTrade;
+import main.java.com.jpmorgan.simplestocks.supportedOperations.IStockCalculator;
+import main.java.com.jpmorgan.simplestocks.utils.DateHelper;
 
 /**
  * Class responsible for doing all required GBCE stock calculation operations

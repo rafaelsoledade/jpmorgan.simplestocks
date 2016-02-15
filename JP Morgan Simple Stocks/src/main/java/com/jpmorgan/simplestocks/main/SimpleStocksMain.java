@@ -1,4 +1,4 @@
-package com.jpmorgan.simplestocks.main;
+package main.java.com.jpmorgan.simplestocks.main;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -6,16 +6,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import main.java.com.jpmorgan.simplestocks.enums.StockSymbol;
+import main.java.com.jpmorgan.simplestocks.enums.TradeIndicator;
+import main.java.com.jpmorgan.simplestocks.model.GBCEStock;
+import main.java.com.jpmorgan.simplestocks.model.StockTrade;
+import main.java.com.jpmorgan.simplestocks.supportedOperations.impl.GBCEStockCalculator;
+import main.java.com.jpmorgan.simplestocks.utils.GBCEStockSampleDataGenerator;
+
 import org.json.simple.parser.ParseException;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.jpmorgan.simplestocks.enums.StockSymbol;
-import com.jpmorgan.simplestocks.enums.TradeIndicator;
-import com.jpmorgan.simplestocks.model.GBCEStock;
-import com.jpmorgan.simplestocks.model.StockTrade;
-import com.jpmorgan.simplestocks.supportedOperations.impl.GBCEStockCalculator;
-import com.jpmorgan.simplestocks.utils.GBCEStockSampleDataGenerator;
 
 /**
  * 

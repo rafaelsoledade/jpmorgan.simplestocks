@@ -1,7 +1,7 @@
-package com.jpmorgan.simplestocks.model;
+package main.java.com.jpmorgan.simplestocks.model;
 
-import com.jpmorgan.simplestocks.enums.StockSymbol;
-import com.jpmorgan.simplestocks.enums.StockType;
+import main.java.com.jpmorgan.simplestocks.enums.StockSymbol;
+import main.java.com.jpmorgan.simplestocks.enums.StockType;
 
 
 /**

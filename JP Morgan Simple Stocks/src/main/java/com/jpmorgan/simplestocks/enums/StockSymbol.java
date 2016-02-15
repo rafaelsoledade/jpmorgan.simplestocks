@@ -1,4 +1,4 @@
-package com.jpmorgan.simplestocks.enums;
+package main.java.com.jpmorgan.simplestocks.enums;
 
 
 /**
