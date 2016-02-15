@@ -1,6 +1,8 @@
 ## Motivation
 
-This project is a simple stocks manager, developed as part of an assignment for a recruitment process @ JP Morgan. This software includes the use of several Java and OOP concepts such as inheritance, interfaces, abstract classes, generic types, static methods, amongst others. It also has a unitary test component.
+This project is a simple stocks manager. It includes the use of several Java and OOP concepts such as inheritance, interfaces, abstract classes, generic types, static methods, amongst others. It also has a unitary test component.
+The project was developed in Java using the Eclipse IDE, and it's a Maven project. The libraries used are Jackson and Google's JSON-Simple, used for deserializing a JSON file with a test data array.
+The project was compiled using Java 8.
 
 ## Project Description
 
@@ -29,18 +31,13 @@ This project is a simple stocks manager, developed as part of an assignment for 
 
 ## Installation
 
-The project was developed in Java using the Eclipse IDE, in a Maven project. After getting the projet from GitHub, you can compile it using the command
+After pulling the project from GitHub, you can compile it using mvn with the following command
 
      maven clean install
 
 To run the program as a Java application use the command
 
      maven exec:java
-
-## API Reference
-
-The libraries used are Jackson and Google's JSON-Simple, used for deserializing a JSON file with a test data array.
-The project was compiled using Java 8.
 
 ## Tests
 
