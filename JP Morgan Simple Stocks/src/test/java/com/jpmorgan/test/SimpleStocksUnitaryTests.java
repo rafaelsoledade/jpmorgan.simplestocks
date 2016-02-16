@@ -68,7 +68,7 @@ public class SimpleStocksUnitaryTests {
 	GBCEStockOperations stockCalculator = new GBCEStockOperations();
 	double gbceAllShareIndex = stockCalculator.calculateGBCEAllShareIndex(testEntriesList);
 
-	assertEquals(0.0, gbceAllShareIndex);
+	assertEquals(1.0, gbceAllShareIndex);
 	
 	for(GBCEStock currStock : testEntriesList) {
 	    currStock.setMarketPrice(15.35);
