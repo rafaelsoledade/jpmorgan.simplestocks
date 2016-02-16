@@ -7,7 +7,7 @@ import main.java.com.jpmorgan.simplestocks.enums.StockSymbol;
 import main.java.com.jpmorgan.simplestocks.enums.TradeIndicator;
 import main.java.com.jpmorgan.simplestocks.model.GBCEStock;
 import main.java.com.jpmorgan.simplestocks.model.StockTrade;
-import main.java.com.jpmorgan.simplestocks.supportedOperations.impl.GBCEStockOperations;
+import main.java.com.jpmorgan.simplestocks.operations.impl.GBCEStockOperations;
 import main.java.com.jpmorgan.simplestocks.utils.GBCEStockSampleDataGenerator;
 
 import org.json.simple.parser.ParseException;

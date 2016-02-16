@@ -10,7 +10,7 @@ import java.util.List;
 import main.java.com.jpmorgan.simplestocks.enums.StockSymbol;
 import main.java.com.jpmorgan.simplestocks.enums.TradeIndicator;
 import main.java.com.jpmorgan.simplestocks.model.GBCEStock;
-import main.java.com.jpmorgan.simplestocks.supportedOperations.impl.GBCEStockOperations;
+import main.java.com.jpmorgan.simplestocks.operations.impl.GBCEStockOperations;
 import main.java.com.jpmorgan.simplestocks.utils.DateHelper;
 import main.java.com.jpmorgan.simplestocks.utils.GBCEStockSampleDataGenerator;
 

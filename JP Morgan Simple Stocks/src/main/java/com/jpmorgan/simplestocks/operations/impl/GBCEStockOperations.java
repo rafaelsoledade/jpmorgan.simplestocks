@@ -1,4 +1,4 @@
-package main.java.com.jpmorgan.simplestocks.supportedOperations.impl;
+package main.java.com.jpmorgan.simplestocks.operations.impl;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -8,7 +8,7 @@ import main.java.com.jpmorgan.simplestocks.enums.StockType;
 import main.java.com.jpmorgan.simplestocks.enums.TradeIndicator;
 import main.java.com.jpmorgan.simplestocks.model.GBCEStock;
 import main.java.com.jpmorgan.simplestocks.model.StockTrade;
-import main.java.com.jpmorgan.simplestocks.supportedOperations.IStockOperations;
+import main.java.com.jpmorgan.simplestocks.operations.IStockOperations;
 import main.java.com.jpmorgan.simplestocks.utils.DateHelper;
 
 /**

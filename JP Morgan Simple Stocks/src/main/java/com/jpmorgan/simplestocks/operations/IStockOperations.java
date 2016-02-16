@@ -1,4 +1,4 @@
-package main.java.com.jpmorgan.simplestocks.supportedOperations;
+package main.java.com.jpmorgan.simplestocks.operations;
 
 import java.util.List;
 
