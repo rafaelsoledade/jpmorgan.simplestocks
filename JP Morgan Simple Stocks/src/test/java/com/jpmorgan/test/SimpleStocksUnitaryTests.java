@@ -20,6 +20,12 @@ import org.junit.Test;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
+/**
+ * Implemented some unitary tests. At the time of this comment the test coverage was of around 70%
+ * 
+ * @author rafaelmatos
+ *
+ */
 public class SimpleStocksUnitaryTests {
 
     @Test
