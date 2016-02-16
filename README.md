@@ -40,7 +40,8 @@ To run the program as a Java application use the command
 
 ## Program Interface
 
-When running the project all the operations will be calculated for a set of pre-defined parameters. The results will be displayed on scree. A web service invocation approach could be developed in a future release, using simple Spark or Spring setups to request a web service with some given parameters to get the intended result.
+When running the project all the operations will be calculated for a set of pre-defined parameters. The results will be displayed on screen. Even though this part was not really specified in the exercise, a web service invocation approach could be developed in a future release using, for example, Spring annotations to request a REST WS with some given parameters that calls a Stock operation and returns the intended result.
+
 
 ## Tests
 
