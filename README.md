@@ -45,7 +45,7 @@ When running the project all the operations will be calculated for a set of pre-
 
 ## Tests
 
-The project has a unit test component, implemented with JUnit 4. To run the tests, use the command
+The project has a unit test component with a coverage of around 70%, implemented with JUnit 4. To run the tests, use the command
 
      mvn clean test
 
