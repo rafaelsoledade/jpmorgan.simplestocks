@@ -10,7 +10,7 @@ import java.util.List;
 import main.java.com.jpmorgan.simplestocks.enums.StockSymbol;
 import main.java.com.jpmorgan.simplestocks.enums.TradeIndicator;
 import main.java.com.jpmorgan.simplestocks.model.GBCEStock;
-import main.java.com.jpmorgan.simplestocks.supportedOperations.impl.GBCEStockCalculator;
+import main.java.com.jpmorgan.simplestocks.supportedOperations.impl.GBCEStockOperations;
 import main.java.com.jpmorgan.simplestocks.utils.DateHelper;
 import main.java.com.jpmorgan.simplestocks.utils.GBCEStockSampleDataGenerator;
 
@@ -25,7 +25,7 @@ public class SimpleStocksUnitaryTests {
     @Test
     public void testDividendYield() throws JsonParseException, JsonMappingException, IOException, ParseException {
 	HashMap<StockSymbol, GBCEStock> testEntries = GBCEStockSampleDataGenerator.generateSampleDataMap();
-	GBCEStockCalculator stockCalculator = new GBCEStockCalculator();
+	GBCEStockOperations stockCalculator = new GBCEStockOperations();
 	
 	GBCEStock stock = testEntries.get(StockSymbol.ALE);
 	double dividendYield = stockCalculator.calculateDividendYield(stock, 25.0);
@@ -35,7 +35,7 @@ public class SimpleStocksUnitaryTests {
     @Test
     public void testPERatio() throws JsonParseException, JsonMappingException, IOException, ParseException {
 	HashMap<StockSymbol, GBCEStock> testEntries = GBCEStockSampleDataGenerator.generateSampleDataMap();
-	GBCEStockCalculator stockCalculator = new GBCEStockCalculator();
+	GBCEStockOperations stockCalculator = new GBCEStockOperations();
 	
 	GBCEStock stock = testEntries.get(StockSymbol.POP);
 	double peRatio = stockCalculator.calculatePeRatio(stock, 1.35);
@@ -46,7 +46,7 @@ public class SimpleStocksUnitaryTests {
     public void testVolumeWeightedStockPrice() throws JsonParseException, JsonMappingException, IOException, ParseException {
 
 	HashMap<StockSymbol, GBCEStock> testEntries = GBCEStockSampleDataGenerator.generateSampleDataMap();
-	GBCEStockCalculator stockCalculator = new GBCEStockCalculator();
+	GBCEStockOperations stockCalculator = new GBCEStockOperations();
 	
 	GBCEStock stock = testEntries.get(StockSymbol.ALE);
 	stockCalculator.recordTrade(stock, 50, TradeIndicator.SELL, 15.0);
@@ -65,7 +65,7 @@ public class SimpleStocksUnitaryTests {
 	HashMap<StockSymbol, GBCEStock> testEntries = GBCEStockSampleDataGenerator.generateSampleDataMap();
 	List<GBCEStock> testEntriesList = GBCEStockSampleDataGenerator.allGBCEStocksList(testEntries);
 
-	GBCEStockCalculator stockCalculator = new GBCEStockCalculator();
+	GBCEStockOperations stockCalculator = new GBCEStockOperations();
 	double gbceAllShareIndex = stockCalculator.calculateGBCEAllShareIndex(testEntriesList);
 
 	assertEquals(0.0, gbceAllShareIndex);
