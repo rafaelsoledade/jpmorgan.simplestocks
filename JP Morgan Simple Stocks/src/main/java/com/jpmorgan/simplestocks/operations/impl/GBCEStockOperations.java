@@ -39,9 +39,9 @@ public class GBCEStockOperations implements IStockOperations<GBCEStock> {
     }
 
     public double calculatePeRatio(GBCEStock stock, double marketPrice) {
-	
+
 	stock.setMarketPrice(marketPrice);
-	
+
 	if (stock.getLastDividend() > 0) {
 	    return new BigDecimal((marketPrice / stock.getLastDividend())).setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
 	}
@@ -57,7 +57,7 @@ public class GBCEStockOperations implements IStockOperations<GBCEStock> {
 	    stockTrade.setQuantity(nShares);
 	    stockTrade.setTimeStamp(new Date());
 	    stockTrade.setTradeIndicator(tradeIndicator);
-	    
+
 	    tradePrice = new BigDecimal(tradePrice).setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
 
 	    stockTrade.setTradePrice(tradePrice);
@@ -92,7 +92,9 @@ public class GBCEStockOperations implements IStockOperations<GBCEStock> {
 
 	if (allStocks.size() > 0) {
 	    for (GBCEStock currStock : allStocks) {
-		stockPriceMultiplied *= currStock.getMarketPrice();
+		if (currStock.getMarketPrice() > 0) {
+		    stockPriceMultiplied *= currStock.getMarketPrice();
+		}
 	    }
 	    return new BigDecimal(Math.pow(stockPriceMultiplied, 1.0 / allStocks.size())).setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
 	}
