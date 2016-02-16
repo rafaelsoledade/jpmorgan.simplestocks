@@ -16,11 +16,6 @@ import main.java.com.jpmorgan.simplestocks.utils.DateHelper;
  * 
  * @author rafaelmatos
  * 
- *         Logger
- * 
- *         JUNIT com testes de unidade: sanity checks, inserir dados de teste
- *         errados (stock diferente), etc
- * 
  */
 public class GBCEStockOperations implements IStockOperations<GBCEStock> {
 
@@ -32,7 +27,6 @@ public class GBCEStockOperations implements IStockOperations<GBCEStock> {
 
 	if (marketPrice > 0) {
 	    if (StockType.COMMON.equals(stock.getStockType())) {
-
 		return new BigDecimal((stock.getLastDividend() / marketPrice)).setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
 	    }
 
@@ -45,9 +39,10 @@ public class GBCEStockOperations implements IStockOperations<GBCEStock> {
     }
 
     public double calculatePeRatio(GBCEStock stock, double marketPrice) {
-
+	
+	stock.setMarketPrice(marketPrice);
+	
 	if (stock.getLastDividend() > 0) {
-	    stock.setMarketPrice(marketPrice);
 	    return new BigDecimal((marketPrice / stock.getLastDividend())).setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
 	}
 	return defaultReturnValue;
