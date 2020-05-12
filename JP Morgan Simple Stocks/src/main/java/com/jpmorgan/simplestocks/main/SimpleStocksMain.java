@@ -19,7 +19,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
  * 
  * Main class which serves as an entry point, even though this is a very basic version of it.
  * 
- * @author rafaelmatos testing this mofo
+ * @author rafaelmatos
  *
  */
 public class SimpleStocksMain {
